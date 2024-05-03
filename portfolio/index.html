@@ -1,0 +1,219 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>PORTFOLIO</title>
+        <meta charset="utf-8">
+        <meta name="description" content="KODEのPortfolio。">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&family=Noto+Sans+JP&family=Yusei+Magic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@700&display=swap" rel="stylesheet">
+
+
+    </head>
+
+<body>
+       <!-- ヘッダー -->
+        <header>
+
+        <!-- スマホ用メニューボタン -->
+        <img id="menu-sp" src="images/hunburger-menu.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display='block'">
+        <!-- 画像を変更 -->
+
+        <!-- スマホ用ナビゲーション -->
+        <nav id="nav-sp">
+            <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display='none'">
+            <a class="menu" href="index.html" 
+                onclick="document.getElementById('nav-sp').style.display='none'">TOP</a>
+            <a class="menu" href="index.html#skills" 
+                onclick="document.getElementById('nav-sp').style.display='none'">SKILLS</a>
+            <a class="menu" href="index.html#archieve" 
+                onclick="document.getElementById('nav-sp').style.display='none'">ARCHIEVE</a>
+            <a class="menu" href="index.html#about"
+                onclick="document.getElementById('nav-sp').style.display='none'">ABOUT</a>
+
+            <a class="menu" href="index.html#contact" 
+                onclick="document.getElementById('nav-sp').style.display='none'">CONTACT</a>
+            <div id="sns">
+                <a href="https://www.facebook.com/sejuku2013"><img src="images/button-facebook.png" alt="Facebookのリンク"></a>
+                <a href="https://twitter.com/samuraijuku"><img src="images/button-twitter.png" alt="twitterのリンク"></a>
+                <a href="https://www.youtube.com/channel/UCCFOQO5aDK0xXam4cUQXT8g"><img src="images/button-youtube.png" alt="YouTubeのリンク"></a>
+                <!--リンク先とMISSIONとかの文字を変える  -->
+            </div>
+            </nav>
+    </header>
+     <main>
+        <article>
+            <!-- メインビジュアル -->
+            <section id="main-visual" >
+                <img src="images/imagenation-firstview.png" >
+            </section>
+        
+            <!--skills -->
+        <section id="skills" class="contents">
+            <img src="images/skills.png" >
+            <div id="skills-flex">
+                <div class="hearing">
+                    <img src="images/hearing.png" >
+                    <h3>ヒアリング</h3>
+                    <p>
+                        ご要望を丁寧にヒアリングします。
+                    </p>
+                </div>
+
+                <div class="design">
+                    <img  src="images/design.png" >
+                    <h3>デザイン</h3>
+                    <p>ご要望に沿ったデザインをご提案します。</p>
+                    <div>Figma,photoshop<br></div>
+                </div>
+
+                <div class="coding">
+                    <img src="images/coding.png" >
+                    <h3>コーディング</h3>
+                    <p>ご希望のデザインを実現します。</p>
+                    <div>
+                        HTML/CSS,JQuery
+                    </div>
+                </div>
+            </div>
+            <p id="message1">
+                「見やすく、ちょっとした驚きのあるウエブサイト」を作成します。<br>
+            </p>
+        </section>
+<!-- archieve -->
+    <section id="archieve" class="contents">
+        <img src="images/archivement.png" >
+        <div>
+            <div id="archieve-left">
+                <div >
+                    <img class="archieve-photo" src="images/biyou.jpg" >
+                        <div class="archieve-explain ">
+                        <h3>オールインシャンプー A</h3>
+                        </div>
+                        <div class="dark-cover">   
+                        </div>
+                </div>
+                        <div>
+                            <img class="archieve-photo" src="images/seminar.jpg" >
+                            <div class="archieve-explain ">
+                            <h3>貸会議室 B</h3>
+                            </div>
+                            <div class="dark-cover">   
+                            </div>
+                        </div>
+                 </div> 
+            <div id="archieve-right">
+                <div>
+                    <img class="archieve-photo" src="images/cookingschool.jpg" >
+                        <div class="archieve-explain ">
+                        <h3>クッキングスクール　C</h3>
+                        </div>
+                        <div class="dark-cover">   
+                        </div>
+                </div>
+                <div>
+                    <img class="archieve-photo" src="images/cookingschool (2).jpg" >
+                        <div class="archieve-explain ">
+                        <h3>調理師専門学校 D</h3>
+                        </div>
+                        <div class="dark-cover">   
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        </section>
+
+    <!-- about -->
+    <section id="about" class="contents">
+        <img src="images/about.png" >
+           <div id="about1">
+                <div id="aboutphoto1">
+                    <img src="images/shutterstock_286992134.jpg">
+                </div>
+                <div id="aboutprofile">
+                    <p>プロフィール：<br>
+                        医療系大学を卒業後、<br>
+                        病院に就職し、10年医療従事者として<br>
+                        勤務。<br>
+                        <br>                        
+                        2023年ウェブ制作をスクールで学習。<br>
+                        2024年からウエブ制作業を開始。<br>
+                        </p>
+                </div>
+           </div>
+        
+          
+           <div id="about2">
+                <div id="aboutme">
+                    <p>
+                    得意：<br>
+                    資料作成経験が豊富です。<br>
+                    経験を活かし、見やすいウエブページ<br>
+                    を作成致します。<br><br>
+
+                    趣味：筋トレ、読書<br>
+                    </p>
+                </div>
+                <div id="aboutphoto2">
+                    <img src="images/Rectangle 43.png" >
+                </div>
+            </div>
+    </section>
+
+
+    <!-- aboutmore -->
+        <div  id="aboutmore-title"class="contents">
+            <img src="images/about more.png"  >
+        </div>
+        <section id="aboutmore"> 
+            <div id="aboutmorepage">         
+                    <div id="card">
+                        <img src="images/card.png">
+                        <div id="nigaoe">
+                        </div>
+                    </div>
+                    <img src="images/PXL_20240115_011449305.PORTRAIT~4.jpg" >
+            </div>     
+        </section>
+
+        <!-- お問い合わせフォーム -->
+        <section id="contact" class="contents">
+            <img src="images/Contact.png" >
+            <div>
+                <p>
+                    まずはお気軽にお問合せください。<br>
+                    下記のボタンよりgoogle formに移動します。
+                </p>
+               <p> <a href="" target="_blank" class="block-center" >
+                    お問い合わせはこちらから
+                </a>
+                </p>
+            </div>
+        </section>
+    </article>
+ 
+  <footer>
+    </div>
+    <div id="footer-link">
+        <a href="index.html#skills">skills</a>
+        <a href="index.html#archieve">archievement</a>
+        <a href="index.html#about">about</a>
+        <a href="index.html#contact">contact</a>
+    </div>
+  </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+$(window).on("load", function() {
+    $('#main-visual img').fadeIn(2000); 
+});
+</script>
+</body>
+        
+</html>

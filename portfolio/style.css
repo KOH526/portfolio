@@ -1,0 +1,437 @@
+/* PC、スマホ共通スタイル */
+body{
+    font-family:"sourve Snas Pro","Hiragino Kaku Gothic ProN",Meiryo,Arial,sans-serif;
+}
+p{
+    font-size:15px;
+}
+/* PCのスタイル */
+
+/* 横幅設定 */
+body{
+    min-width:960px;
+    margin: 0 auto 0 auto ;
+}
+/* ヘッダー */
+header{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+
+/* ハンバーガーメニュー */
+#menu-sp{
+    position:fixed;
+    top:0;
+    right:0;
+    padding:0;
+    width:85px;
+    height:60px;
+    z-index:101;
+}
+/* スマホ用ナビゲーションの表示切替 */
+/* 初期状態、レイアウトと非表示設定 */
+#nav-sp{
+    background-color:#44B0B0;
+    position:fixed;
+    right:0;
+    top:0px;
+    height:100%;
+    width: 30%;
+    display:none;
+    z-index:102;
+}
+/* ×ボタン */
+#close{
+    position:absolute;
+    top:5px;
+    right:5px;
+}
+/* ナビゲーションメニュー用ロゴ */
+#logo-sp{
+    margin:80px 0 30 px 20px;
+}
+/* ナビゲーションのリンクの装飾設定 */
+#nav-sp>a{
+    display:block;
+}
+#nav-sp>a:link{
+    color:#ffffff;
+}
+#nav-sp > a:visited{
+    color:#ffffff;
+}
+#nav-sp > a:hover{
+    color:#038363;
+    text-decoration:underline;
+}
+#nav-sp>a:active{
+    color:#ffffff;
+}
+#nav-sp>.menu{
+    text-decoration:none;
+    display:block;
+    margin:0px 20px 0 20px;
+    height:55px;
+    font-size:20px;
+    background-repeat:no-repeat;
+    background-position:right top;
+}
+
+/* メインビジュアル */
+
+#main-visual{
+   position:relative;
+   z-index:100;
+}
+
+#main-visual>img{
+    width:100%;
+    display:none;
+}
+.contents{
+    width:1000px;
+    margin:0 auto;
+}
+
+.contents>img{
+    margin-bottom:22px;
+}
+
+
+h2{
+font-family: sans-serif;
+color:#BCBCBC;
+text-shadow: 0 0 #000, 1px 1px 2px #eee;
+}
+
+h3{
+    font-size:27px;
+}
+
+#skills{
+    margin-top:130px;
+}
+#skills-flex{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+#skills-flex > div {
+    position:relative;
+     width: 312px;
+     height:450px; 
+    background-color: #44B0B0;
+}
+#skills-flex>div>h3{
+    /* position:absolute;
+    top:252px;
+    left:50%;
+    transform: translate(-50%, -50%); */
+    text-align:center;
+    color:#FFFFFF;
+
+}
+#skills-flex>div>p{
+    /* position:absolute;
+    top:324px;
+    left:50%;
+    transform: translate(-50%, -50%); */
+    text-align:center;
+    color:#FFFFFF;
+}
+#skills-flex>div>div{
+    /* position:absolute;
+    top:420px;
+    left:50%;
+    transform: translate(-50%, -50%); */
+    text-align:center;
+    color:#FFFFFF;
+}
+#skills-flex>div>img{
+    display:block;
+    margin:0 auto;
+    margin-top:30px;   
+}
+#skills-flex>.hearing>img{
+    width:228px;  
+}
+#skills-flex>.design>img{
+    width:260px;  
+}
+
+#skills-flex>.coding>img{
+    width:293px;  
+}
+
+#message1{
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size:20px;
+}
+
+
+/*archieve */
+#archieve{
+    margin-top:65px;
+}
+/* 外枠 */
+#archieve>div{
+    display:flex;
+    justify-content: space-between;
+}
+/* 左のカラム */
+#archieve-left{
+    margin:0px 0px 0px 0px ;
+}
+/* 右のカラム */
+#archieve-right{
+    margin:0px 0px 0px 0px;
+}
+/* 画像＋説明の枠 */
+#archieve-left>div{
+position:relative;
+width: 458px;
+height:417px;
+margin:0px 0px 70px 0px;
+background-color: #44B0B0;
+}
+
+#archieve-right>div{
+    position:relative;
+    width: 458px;
+    height:417px;
+    margin:0px 0px 70px 0px;
+    background-color: #44B0B0;
+}
+/* 画像 */
+.archieve-photo{
+    display: block;
+    width:398px;
+    height:322px;
+    margin: 10px auto;
+    padding:28px;
+    position: relative;
+}
+/* フォーカス時色黒くしたい */
+.dark-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: .3;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dark-cover:hover {
+    background-color: black;
+  }
+
+
+/* 商品説明 */
+.archieve-explain{
+    position:absolute;
+    color:#ffffff;
+    left:0;
+    top:350px;
+    margin:0 40px;
+    padding:10px;
+}
+
+/* 説明文の見出し */
+.archieve-explain>h3{
+    font-size:20px;
+    margin:5px 0 5px 0;
+}
+/* 説明文 */
+.archieve-explain>p{
+    font-size:14px;
+    margin:0;
+}
+
+/* ABOUT */
+#about{
+    margin-top:65px;
+}
+#about>div{
+    display:flex;
+    background-color:#44B0B0 ;
+}
+#about1{
+    padding:38px;
+
+}
+#aboutphoto1>img{
+    width:448px;
+}
+#aboutprofile{
+    padding-left:31px;
+}
+#aboutprofile>p{
+    font-family: sans-serif;
+    font-size:24px;
+    color:#FFFFFF;
+    
+}
+#about2{
+    margin-top:25px;
+    padding:38px;
+}
+#aboutphoto2>img{
+    width:448px;
+    padding-left:35px;
+}
+
+
+#aboutme>p{
+    font-family: sans-serif;
+    font-size:24px;
+    color:#FFFFFF;
+}
+
+/* aboutmoreのセクション*/
+#aboutmore-title{
+    margin-top:65px;
+}
+
+#aboutmorepage{
+    position:relative;
+}
+
+#aboutmorepage>img{
+    width:100%;
+    position:absolute;
+    z-index: 10;
+}
+
+#card>img{
+    width:25%;    
+    position:absolute;
+    z-index: 11;
+    top:50%;
+    left:50%;
+    transform: translate(-25%,25%);
+    text-align: center;
+}
+
+
+/* お問い合わせ */
+#contact{
+    margin: 1250px auto 150px auto;
+    position:relative;
+}
+#contact>div>p{
+    font-family: sans-serif;
+    font-size:24px;
+    text-align:center;
+}
+
+#contact>div>img{
+    text-align:center;
+    position:absolute;
+    top:209px;
+    left:329px;
+}
+.block-center{
+    text-decoration:none;
+    width: 332px;
+    height: 78px;
+    box-sizing: border-box;
+    display: block;
+    background: url(images/contact-arrow2.png);
+    background-repeat: no-repeat;
+    background-position: 0 80%;
+    border: 5px solid #E5E5E5;
+    border-radius:25px;
+    color: #393636;
+    font-size: 15px;
+    text-align: center;
+    line-height: 78px; 
+    margin:0 auto;
+}
+
+.block-center:hover{
+        background-position: 40% 80%;
+        transition: 0.5s;
+}
+/* フッター */
+
+footer {
+    background-color: #0d0d0d;
+    text-align: right;
+    padding: 33px 80px 33px 80px;
+  }
+
+
+#footer-link > a:link{
+    text-decoration:none;
+    margin:10px;
+    font-family: sans-serif;
+    font-size:24px;
+}
+#footer-link > a:link{
+    color:#ffffff;
+}
+#footer-link > a:visited{
+    color:#ffffff;
+}
+#footer-link > a:hover{
+    color:#ffffff;
+    text-decoration:underline;
+}
+#footer-link > a:active{
+    color:#ffffff;
+}
+
+
+
+/* ====================
+スマートフォン用のスタイル 
+=========================*/
+@media screen and (max-width:768px){
+    body{
+        min-width:initial;
+    }
+    #skills-flex{
+        width:100%;
+        display:block;
+        justify-content: space-between;
+    }
+    #skills-flex > div {
+        position:relative;
+        width: 312px;
+        height:auto;
+        margin-left:auto;
+        margin-right:auto;
+        background-color: #44B0B0;
+    }
+
+    #about>div{
+        display:block;
+        background-color:#44B0B0 ;
+    }
+    #aboutphoto1>img{
+        width:100%;
+    }
+    #aboutphoto2>img{
+        width:100%;
+        padding-left:0;
+    }
+
+    .contents{
+        width:100%;
+        margin:0 auto;
+    }
+    #archieve>div{
+        display:block;
+        justify-content: space-between;
+    }
+    #contact{
+        margin-top:auto;
+        transform: translate(0,80%);
+        }
+
+        
+}
